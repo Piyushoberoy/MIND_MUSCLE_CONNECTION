@@ -28,16 +28,8 @@ while True:
         cv2.putText(img, f'{int(per)} %', (1100, 75), cv2.FONT_HERSHEY_PLAIN, 4,
                     (0,255,0), 4)
 
-
-       
-
-
-        
-
-
-
-
-
     cv2.imshow("Image",img)
-    cv2.waitKey(1)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        cv2.destroyAllWindows()
+        break
    

@@ -54,5 +54,7 @@ while True:
         
     #print(angle , per)
       cv2.imshow("Image" , img)
-      cv2.waitKey(1)
+      if cv2.waitKey(1) & 0xFF == ord('q'):
+            cv2.destroyAllWindows()
+            break
 
